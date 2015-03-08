@@ -4,6 +4,12 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
 @import url(http://fonts.googleapis.com/css?family=Patua+One);
 
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; 
+}
+
 /* ----- TYPOGRAPHY ----- */
 
 body {
@@ -18,7 +24,7 @@ h4,
 h5,
 h6 {
 	font-family: 'Patua One', cursive;
-	color: #FE9900;
+	color: #22BACD;
 }
 
 /* ----- BUTTON STYLING ----- */
@@ -26,26 +32,52 @@ h6 {
 	-webkit-border-radius: 25px;
 	-moz-border-radius: 25px;
 	border-radius: 25px;
-  border: 2px solid #C3E9F6;
+  	border: 2px solid #3A82B4;
 	text-align: center;
 	height: 40px;
-  padding: 10px 30px;
+  	padding: 10px 30px;
 }
 
 a.button {
   text-decoration: none;
   color: #3A82B4;
+  text-transform: uppercase;
 }
 
 a.button:hover{
   transition: background-color 1s ease;
-  background-color: #C3E9F6;
-  border: 2px solid #C3E9F6;
+  background-color: #00a9db;
+  border: 2px solid #00a9db;
+  color: #FFFFFF;
 }
+
+/* ----- NAV STYLING ----- */
+
 
 /* ----- FOOTER STYLING -----*/
 footer {
 	padding: 20px 0px 20px 0px;
 	background-color: #3A82B4;
 	color: #C3E9F6;
+}
+
+.hero-image {
+	position: relative;
+	width: 100%;	
+}
+
+.text-over-image {
+	position: absolute;
+	top: 200px; 
+   	left: 0; 
+   	width: 100%;	
+}
+
+/* ----- FLEX BOX FOR EQUAL HEIGHT DIVS AT LARGE SCREEN SIZES ----- */
+.equal-row {
+	display: table;	
+}
+
+.equal-item {
+	display: table-cell;	
 }
