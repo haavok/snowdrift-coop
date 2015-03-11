@@ -39,7 +39,6 @@ section {
 	border-radius: 25px;
   	border: 2px solid #3A82B4;
 	text-align: center;
-	height: 40px;
   	padding: 10px 30px;
 }
 
@@ -50,13 +49,70 @@ a.button {
 }
 
 a.button:hover{
-  transition: background-color 1s ease;
+  transition: background-color 1s ease-in-out;
   background-color: #00a9db;
   border: 2px solid #00a9db;
   color: #FFFFFF;
 }
 
 /* ----- NAV STYLING ----- */
+nav {
+    display: block;
+    position: relative;
+    min-height: 40px;
+}
+
+nav, nav a {
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+}
+
+nav a:hover {
+    background: #f2f2f2;
+    color: #1b578c;
+    border-bottom: 2px solid #1b578c;
+}
+
+nav ul {
+    padding:0;
+    margin: 0;
+}
+
+nav ul li {
+    float:left;
+    display:inline;
+    position:relative;
+    background: #1b578c;
+}
+
+nav ul li ul {
+    left:0;
+    top:100%;
+}
+
+nav > input,
+nav > label {
+  display: none;
+}
+ 
+nav > label {
+  width: 100%;
+  float: left;
+  padding: 10px;
+  padding-right: 0;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
 
 /* ----- FOOTER STYLING -----*/
@@ -119,4 +175,39 @@ height: 50px;
 width: 50px;
 display:inline-block;
 padding: 0 0 0 0px;
+}
+
+/* ----- MOBILE STYLING ----- */
+@media (max-width: 400px) {
+	
+	/* ----- TOGGLE MENU ------ */
+    nav > label, nav ul li ul {
+        display: block;
+    }
+    nav > ul {
+        display: none;
+        clear: both;
+    }
+    nav > input:checked + ul { /* <================ This is the key */
+        display: block;
+    }
+    nav ul ul li a:before {
+        content:'↪ ';
+        display: inline;
+    }
+    nav ul li {
+        float: none;
+        display: block;
+        border-right: none;
+        padding-left: 10px;
+    }
+    nav li:hover ul {
+        position: relative;
+        width: auto;
+    }
+    nav ul ul li:hover > ul {
+        right:auto;
+        top: auto;
+        left: auto;
+    }
 }

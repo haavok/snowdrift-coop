@@ -13,22 +13,23 @@
 
 	<!-- Logo, Navigation, and Login -->
 	<header class="row">
-    	<!-- Wrapper to contain elements within the page -->
-    	<div class="container">
-        	<!-- Snowdrift.coop Logo -->
-            <a href="index.html"><img class="col-md-1" src="images/snowdrift-icon.svg" alt="Snowdrift.coop Logo"></a>
-            <!-- Main Site Navigation -->
-            <nav>
-                <ul class="nav nav-pills col-md-9">
+        <!-- Main Site Navigation -->
+        <nav class="menu">
+            <!-- Wrapper to contain elements within the page -->
+            <div class="container">
+            <label for="toggle-mobile-menu">&#9776; Menu</label>
+  			<input id="toggle-mobile-menu" type="checkbox"/>        	
+                <ul class="col-md-9">
+                	<li><a href="index.html"><img class="col-md-1" src="images/snowdrift-icon.svg" alt="Snowdrift.coop Logo"></a></li>
                     <li><a href="join-us.html">Join</a></li>
                     <li><a href="https://snowdrift.coop/p/snowdrift/w/en/intro">About</a></li>
                     <li><a href="https://snowdrift.coop/p">Projects</a></li>
                     <li><a href="https://snowdrift.coop/p/snowdrift/blog">Blog</a></li>
                     <li><a href="https://snowdrift.coop/p/snowdrift/contact">Contact</a></li>
+                    <li><a class="button" href="https://snowdrift.coop/auth/login">Sign in</a></li>
                 </ul>
-            </nav>
-            <a class="col-md-2 button" href="https://snowdrift.coop/auth/login">Sign in</a>
-        </div><!-- end Container -->
+            </div><!-- end Container -->
+        </nav>        
     </header>
     
     <!-- Main Page Content -->
