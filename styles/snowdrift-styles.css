@@ -27,6 +27,10 @@ h6 {
 	color: #22BACD;
 }
 
+h1 { font-size: 3em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.5em; }
+
 /* ----- SECTIONING ----- */
 section {
 	padding: 75px 0px;	
@@ -49,71 +53,19 @@ a.button {
 }
 
 a.button:hover{
-  transition: background-color 1s ease-in-out;
+  transition: background-color .3s ease-in-out;
   background-color: #00a9db;
   border: 2px solid #00a9db;
   color: #FFFFFF;
 }
 
 /* ----- NAV STYLING ----- */
-nav {
-    display: block;
-    position: relative;
-    min-height: 40px;
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  color: #fff;
+  background-color: #00a9db;
 }
-
-nav, nav a {
-    color: #f2f2f2;
-    text-decoration: none;
-}
-
-nav a {
-    display: block;
-    padding: 10px;
-}
-
-nav a:hover {
-    background: #f2f2f2;
-    color: #1b578c;
-    border-bottom: 2px solid #1b578c;
-}
-
-nav ul {
-    padding:0;
-    margin: 0;
-}
-
-nav ul li {
-    float:left;
-    display:inline;
-    position:relative;
-    background: #1b578c;
-}
-
-nav ul li ul {
-    left:0;
-    top:100%;
-}
-
-nav > input,
-nav > label {
-  display: none;
-}
- 
-nav > label {
-  width: 100%;
-  float: left;
-  padding: 10px;
-  padding-right: 0;
-  cursor: pointer;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
 
 /* ----- FOOTER STYLING -----*/
 footer {
@@ -152,29 +104,6 @@ footer {
 	border-right-style: none;
 	width: 100%;	
 	padding-top: 10px;
-}
-
-input[type=checkbox] {
-display:none;
-}
- 
-input[type=checkbox] + label
-{
-background: url("../images/icon-html.svg") no-repeat;
-background-size: 100%;
-height: 50px;
-width: 50px;
-display:inline-block;
-padding: 0 0 0 0px;
-}
-input[type=checkbox]:checked + label
-{
-background: url("../images/icon-html-hover.svg") no-repeat;
-background-size: 100%;
-height: 50px;
-width: 50px;
-display:inline-block;
-padding: 0 0 0 0px;
 }
 
 /* ----- MOBILE STYLING ----- */
