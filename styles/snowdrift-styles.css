@@ -14,7 +14,7 @@
 
 body {
 	font-family: 'Raleway', sans-serif;
-	color: #3A82B4;
+	color: #13628e;
 }
 
 h1,
@@ -24,16 +24,36 @@ h4,
 h5,
 h6 {
 	font-family: 'Patua One', cursive;
-	color: #22BACD;
 }
 
-h1 { font-size: 3em; }
-h2 { font-size: 2em; }
-h3 { font-size: 1.5em; }
+h1 { 
+	font-size: 3em;
+	color: #4EBF7A; 
+}
+
+h2 
+{ 
+	font-size: 2em; 
+	color: #4EBF7A; 
+}
+
+h3 { 
+	font-size: 1.5em; 
+	color: #4ebf7a;
+}
 
 /* ----- SECTIONING ----- */
 section {
 	padding: 75px 0px;	
+}
+
+.blue-background {
+	background-image: url("../images/background-blue-snow.svg");
+	background-size: 100%;	
+}
+
+.shovel-buttons {
+	margin-top: 20px;	
 }
 
 /* ----- BUTTON STYLING ----- */
@@ -41,22 +61,42 @@ section {
 	-webkit-border-radius: 25px;
 	-moz-border-radius: 25px;
 	border-radius: 25px;
-  	border: 2px solid #3A82B4;
+  	border: 3px solid #13628e;
 	text-align: center;
   	padding: 10px 30px;
 }
 
 a.button {
   text-decoration: none;
-  color: #3A82B4;
+  color: #13628e;
   text-transform: uppercase;
 }
 
 a.button:hover{
   transition: background-color .3s ease-in-out;
-  background-color: #00a9db;
-  border: 2px solid #00a9db;
+  background-color: #13628e;
+  border: 2px solid #13628e;
   color: #FFFFFF;
+}
+
+.call-out-help {
+	background-image: url("../images/button-help.svg");
+	background-size: 100%;
+}
+
+.call-out-help:hover {
+	background-image: url("../images/button-help-hover.svg");
+	background-size: 100%;	
+}
+
+.call-out-join {
+	background-image: url("../images/button-join.svg");
+	background-size: 100%;
+}
+
+.call-out-join:hover {
+	background-image: url("../images/button-join-hover.svg");	
+	background-size: 100%;
 }
 
 /* ----- NAV STYLING ----- */
@@ -64,14 +104,29 @@ a.button:hover{
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
   color: #fff;
-  background-color: #00a9db;
+  background-color: #13628e;
+}
+
+.nav-pills > li > a {
+	color: #13628e;	
+}
+
+.nav-pills > li > a:hover {
+	background-color: #c4e8f5;	
+}
+
+nav {
+	margin-top: 20px;
+	margin-bottome: 20px;	
 }
 
 /* ----- FOOTER STYLING -----*/
 footer {
-	padding: 20px 0px 20px 0px;
-	background-color: #3A82B4;
+	padding: 100px 0px 20px 0px;
+	background-image: url("../images/background-footer.svg");
+	background-size: 100%;
 	color: #C3E9F6;
+	height: 200px;
 }
 
 .hero-image,
@@ -98,12 +153,54 @@ footer {
 
 /* ----- FORM STYLING ----- */
 .form-item input, .form-item textarea {
-  	border-bottom: 1px solid #3A82B4;
+  	border-bottom: 1px solid #13628e;
 	border-top-style: none;
 	border-left-style: none;
 	border-right-style: none;
 	width: 100%;	
 	padding-top: 10px;
+}
+
+/* ----- LINK STYLING ----- */
+a {
+	color: #c3e9f6;	
+}
+
+/* ----- STYLE GUIDE ----- */
+.guide-module,
+.guide-example,
+.class-name {
+	border: solid 1px #13628e;	
+}
+
+.guide-module {
+	padding: 10px;
+	margin-bottom: 15px;	
+}
+
+.guide-example {
+	min-height: 30px;
+}
+
+.light-blue {
+	background: #c4e8f5;
+}
+
+.mid-blue {
+	background: #00a9db;	
+}
+
+.dark-blue {
+	background: #13628e;	
+}
+
+.green-accent {
+	background: #4ebf7a;	
+}
+
+code {
+	color: #13628e;
+	background: #c4e8f5;
 }
 
 /* ----- MOBILE STYLING ----- */
@@ -139,4 +236,9 @@ footer {
         top: auto;
         left: auto;
     }
+	
+	footer {
+		background-size: 100%;
+		height: 400px;
+	}
 }

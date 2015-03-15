@@ -12,22 +12,24 @@
 <body>
 
 	<!-- Logo, Navigation, and Login -->
-	<header class="row">
-        <!-- Wrapper to contain elements within the page -->
-        <div class="container">        
-            <!-- Main Site Navigation -->
-        	<nav>
-                <a href="index.html"><img class="col-md-1" src="images/snowdrift-icon.svg" alt="Snowdrift.coop Logo"></a>
+    <header class="row">
+    	<!-- Wrapper to contain elements within the page -->
+    	<div class="container">
+        	<!-- Snowdrift.coop Logo -->
+    		<a href="index.html"><img class="col-md-1 nav-logo" src="images/icon-snowdrift.svg" alt="Snowdrift.coop Logo"></a>
+            <!-- Main Site navigation -->
+            <nav>
                 <ul class="col-md-9 nav nav-pills">
-                    <li><a href="join-us.html">Join</a></li>
-                    <li><a href="https://snowdrift.coop/p/snowdrift/w/en/intro">About</a></li>
-                    <li><a href="https://snowdrift.coop/p">Projects</a></li>
-                    <li><a href="https://snowdrift.coop/p/snowdrift/blog">Blog</a></li>
-                    <li><a href="https://snowdrift.coop/p/snowdrift/contact">Contact</a></li>
-                </ul>                   
-			</nav>
-            <a class="button col-md-2" href="https://snowdrift.coop/auth/login">Sign in</a>        
-    </header></div><!-- end Container -->
+                    <li role="presentation"><a href="join-us.html">Join</a></li>
+                    <li role="presentation"><a href="https://snowdrift.coop/p/snowdrift/w/en/intro">About</a></li>
+                    <li role="presentation"><a href="https://snowdrift.coop/p">Projects</a></li>
+                    <li role="presentation"><a href="https://snowdrift.coop/p/snowdrift/blog">Blog</a></li>
+                    <li role="presentation"><a href="https://snowdrift.coop/p/snowdrift/contact">Contact</a></li>
+                </ul>
+            </nav>
+			<a class="col-md-2 button" href="https://snowdrift.coop/auth/login">Sign in</a>
+    	</div>
+    </header>
     
     <!-- Main Page Content -->
     <main>
@@ -42,16 +44,12 @@
                     <hr class="col-md-offset-4 col-md-4">
                     <p class="col-md-12 text-center">A work in progress&#58; public ALPHA &ndash; not functioning yet</p>
                     <div class="shovel-buttons col-md-offset-3 col-md-6">
-                        <div class="col-md-6 col-xs-6">
-                            <a href="join-us.html">
-                                <img src="http://placehold.it/100x100" alt="Join the Team Icon"> Join the team&#33;
-                            </a>
-                        </div><!-- end column -->
-                        <div class="col-md-6 col-xs-6">
-                            <a href="">
-                                <img src="http://placehold.it/100x100" alt="Help and Donate Icon"> Help and Donate&#33;
-                            </a>
-                        </div><!-- end column -->  
+						<a class="col-md-6" href="join-us.html">
+                        	<img src="images/button-join.svg" alt="join us button">
+                        </a>
+						<a class="col-md-6" href="">
+                        	<img src="images/button-help.svg" alt="join us button">
+                        </a>                        
                     </div> <!-- end shovel buttons -->             
                 </div><!-- end text-over-image -->
 
@@ -64,11 +62,12 @@
         </section>
         
         <!-- The Snowdrift System -->
-        <section>
+        <section class="blue-background">
         	<div class="container">
                 <h2 class="text-center col-md-12 col-xs-12">The Snowdrift System</h2>
                 <p class="text-center col-md-offset-3 col-md-6 col-xs-12">Unlike the one&ndash;to&ndash;one matching in traditional fundraising, Snowdrift uses a many&ndash;to&ndash;many matching pledge that creates a network effect.</p>
                 <h3 class="col-md-12 col-xs-12 text-center">How it Works&#58;</h3>
+                <img class="col-md-6 col-md-offset-3 col-xs-12" src="images/illustration-snowdrift-system.svg" alt="the snowdrift system">
                 <ol class="list-inline col-md-12">
                     <li class="col-md-1 col-xs-1 text-right">1.</li>
                     <li class="col-md-3 col-xs-11">You deposit the money into your private Snowdrift.coop account.</li>
@@ -85,7 +84,7 @@
     <footer>
     	<div class="container">
             <div class="col-md-4 col-xs-12">
-                <p>Snowdrift.coop</p>
+                <p class="identity">Snowdrift.coop</p>
                 <p>Clearing a path to a free/open/libre world</p>
             </div><!-- end column -->
 			<div class="col-md-2 col-md-offset-1 col-xs-12">
