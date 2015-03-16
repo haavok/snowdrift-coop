@@ -43,17 +43,56 @@ h3 {
 }
 
 /* ----- SECTIONING ----- */
-section {
-	padding: 75px 0px;	
+
+.blue-background::before {
+	content:url(../images/background-lightblue-top.svg);
+	display:block;
+	background-color:white;
+	z-index:2;
 }
 
 .blue-background {
-	background-image: url("../images/background-blue-snow.svg");
-	background-size: 100%;	
+	background-color: #c4e8f5;
+}
+
+.blue-background::after {
+	content:url(../images/background-lightblue-bottom.svg);
+	display:block;
+	background-color:white;
+	z-index:2;
+	width: 100%;
 }
 
 .shovel-buttons {
 	margin-top: 20px;	
+}
+
+footer {
+	background-color: #13628e;
+	color: #C3E9F6;
+}
+
+footer::before {
+	content:url(../images/background-footer.svg);
+	display:block;
+	background-color:white;
+	z-index:2;
+}
+
+.hero-image {
+	position: relative;
+	width: 100%;	
+}
+
+.text-over-image {
+	position: absolute;
+	top: 200px; 
+   	left: 0; 
+   	width: 100%;	
+}
+
+.text-over-image p {
+	color: white;
 }
 
 /* ----- BUTTON STYLING ----- */
@@ -79,83 +118,29 @@ a.button:hover{
   color: #FFFFFF;
 }
 
-.call-out-help {
-	background-image: url("../images/button-help.svg");
-	background-size: 100%;
-}
-
-.call-out-help:hover {
-	background-image: url("../images/button-help-hover.svg");
-	background-size: 100%;	
-}
-
-.call-out-join {
-	background-image: url("../images/button-join.svg");
-	background-size: 100%;
-}
-
-.call-out-join:hover {
-	background-image: url("../images/button-join-hover.svg");	
-	background-size: 100%;
-}
-
 /* ----- NAV STYLING ----- */
 nav > li.active > a{
   color: #fff;
   background-color: #13628e;
   padding: 15px;
-  border-bottom: solid 2px orange;
+  border-bottom: solid 2px #4EBF7A;
 }
 
 li > a {
 	color: #13628e;
-  padding: 15px;
-  text-decoration: none;
+  	padding: 15px;
+  	text-decoration: none;
 }
 
 li > a:hover {
 	background-color: #c4e8f5;
   	padding: 15px;
-  	border-bottom: solid 2px orange;
+  	border-bottom: solid 2px #4EBF7A;
 }
 
 nav {
 	margin-top: 20px;
 	margin-bottom: 20px;	
-}
-
-
-/* ----- FOOTER STYLING -----*/
-footer {
-	padding: 100px 0px 20px 0px;
-	background-image: url("../images/background-footer.svg");
-	background-position: top;
-	background-color: #13628e;
-	background-size: 100%;
-	color: #C3E9F6;
-	height: 200px;
-}
-
-.hero-image,
-.section-element {
-	position: relative;
-	width: 100%;	
-}
-
-.text-over-image {
-	position: absolute;
-	top: 200px; 
-   	left: 0; 
-   	width: 100%;	
-}
-
-/* ----- FLEX BOX FOR EQUAL HEIGHT DIVS AT LARGE SCREEN SIZES ----- */
-.equal-row {
-	display: table;	
-}
-
-.equal-item {
-	display: table-cell;	
 }
 
 /* ----- FORM STYLING ----- */
@@ -212,40 +197,10 @@ code {
 
 /* ----- MOBILE STYLING ----- */
 @media (max-width: 400px) {
-	
-	/* ----- TOGGLE MENU ------ */
-    nav > label, nav ul li ul {
-        display: block;
-    }
-    nav > ul {
-        display: none;
-        clear: both;
-    }
-    nav > input:checked + ul { /* <================ This is the key */
-        display: block;
-    }
-    nav ul ul li a:before {
-        content:'↪ ';
-        display: inline;
-    }
-    nav ul li {
-        float: none;
-        display: block;
-        border-right: none;
-        padding-left: 10px;
-    }
-    nav li:hover ul {
-        position: relative;
-        width: auto;
-    }
-    nav ul ul li:hover > ul {
-        right:auto;
-        top: auto;
-        left: auto;
-    }
-	
-	footer {
-		background-size: 100%;
-		height: 400px;
+	.text-over-image {
+		position: absolute;
+		top: 200px; 
+   		left: 0; 
+   		width: 100%;	
 	}
 }
