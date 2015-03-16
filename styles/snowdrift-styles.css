@@ -100,30 +100,37 @@ a.button:hover{
 }
 
 /* ----- NAV STYLING ----- */
-.nav-pills > li.active > a,
-.nav-pills > li.active > a:hover,
-.nav-pills > li.active > a:focus {
+nav > li.active > a{
   color: #fff;
   background-color: #13628e;
+  padding: 15px;
+  border-bottom: solid 2px orange;
 }
 
-.nav-pills > li > a {
-	color: #13628e;	
+li > a {
+	color: #13628e;
+  padding: 15px;
+  text-decoration: none;
 }
 
-.nav-pills > li > a:hover {
-	background-color: #c4e8f5;	
+li > a:hover {
+	background-color: #c4e8f5;
+  	padding: 15px;
+  	border-bottom: solid 2px orange;
 }
 
 nav {
 	margin-top: 20px;
-	margin-bottome: 20px;	
+	margin-bottom: 20px;	
 }
+
 
 /* ----- FOOTER STYLING -----*/
 footer {
 	padding: 100px 0px 20px 0px;
 	background-image: url("../images/background-footer.svg");
+	background-position: top;
+	background-color: #13628e;
 	background-size: 100%;
 	color: #C3E9F6;
 	height: 200px;

@@ -15,18 +15,20 @@
     	<!-- Wrapper to contain elements within the page -->
     	<div class="container">
         	<!-- Snowdrift.coop Logo -->
-    		<a href="index.html"><img class="col-md-1 nav-logo" src="images/icon-snowdrift.svg" alt="Snowdrift.coop Logo"></a>
+    		<a href="index.html"><img class="col-md-1 nav-logo hidden-xs hidden-sm" src="images/icon-snowdrift.svg" alt="Snowdrift.coop Logo"></a>
+            
             <!-- Main Site navigation -->
             <nav>
-                <ul class="col-md-9 nav nav-pills">
-                    <li role="presentation" class="active"><a href="join-us.html">Join</a></li>
-                    <li role="presentation"><a href="https://snowdrift.coop/p/snowdrift/w/en/intro">About</a></li>
-                    <li role="presentation"><a href="https://snowdrift.coop/p">Projects</a></li>
-                    <li role="presentation"><a href="https://snowdrift.coop/p/snowdrift/blog">Blog</a></li>
-                    <li role="presentation"><a href="https://snowdrift.coop/p/snowdrift/contact">Contact</a></li>
+                <ul class="col-md-9 col-xs-12 list-inline">
+                	<li class="hidden-lg hidden-md col-xs-12 text-center"><a href="index.html">Home</a></li>
+                    <li class="active col-xs-12 col-md-2 text-center"><a href="join-us.html">Join</a></li>
+                    <li class="col-xs-12 col-md-2 text-center"><a href="https://snowdrift.coop/p/snowdrift/w/en/intro">About</a></li>
+                    <li class="col-xs-12 col-md-2 text-center"><a href="https://snowdrift.coop/p">Projects</a></li>
+                    <li class="col-xs-12 col-md-2 text-center"><a href="https://snowdrift.coop/p/snowdrift/blog">Blog</a></li>
+                    <li class="col-xs-12 col-md-2 text-center"><a href="https://snowdrift.coop/p/snowdrift/contact">Contact</a></li>
                 </ul>
             </nav>
-			<a class="col-md-2 button" href="https://snowdrift.coop/auth/login">Sign in</a>
+			<a class="col-md-2 col-xs-12 text-center button" href="https://snowdrift.coop/auth/login">Sign in</a>
     	</div>
     </header>
     
@@ -132,7 +134,7 @@
      					<label for="email-address"></label><input name="email-address" type="email" placeholder="Email" required></input>
     				</div>
                     <div class="form-item">
-     					<label for="message"></label><textarea name="message" type="text" placeholder="Message" required></textarea>
+     					<label for="message"></label><textarea name="message" placeholder="Message" required></textarea>
     				</div>
                     <p>Select the area&#40;s&#41; in which you are interested&#58;
                     <div class="checkbox">
