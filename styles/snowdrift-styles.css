@@ -42,6 +42,19 @@ h3 {
 	color: #4ebf7a;
 }
 
+.light-text {
+	color: white;	
+}
+
+.footer-identity-name {
+	font-family:	 'Patua One', cursive;
+	font-size: 2.5em;
+}
+
+.footer-identity-description {
+	font-size: .85em;	
+}
+
 /* ----- SECTIONING ----- */
 
 .blue-background::before {
@@ -49,6 +62,7 @@ h3 {
 	display:block;
 	background-color:white;
 	z-index:2;
+	margin-top: 15px;
 }
 
 .blue-background {
@@ -60,7 +74,6 @@ h3 {
 	display:block;
 	background-color:white;
 	z-index:2;
-	width: 100%;
 }
 
 .shovel-buttons {
@@ -82,6 +95,7 @@ footer::before {
 .hero-image {
 	position: relative;
 	width: 100%;	
+	margin-bottom: 10px;
 }
 
 .text-over-image {
@@ -91,31 +105,30 @@ footer::before {
    	width: 100%;	
 }
 
-.text-over-image p {
-	color: white;
+.area-of-help {
+	margin-top: 30px;	
 }
-
 /* ----- BUTTON STYLING ----- */
 .button {
 	-webkit-border-radius: 25px;
 	-moz-border-radius: 25px;
 	border-radius: 25px;
-  	border: 3px solid #13628e;
+  	border: 3px solid #00a9db;
 	text-align: center;
   	padding: 10px 30px;
 }
 
 a.button {
   text-decoration: none;
-  color: #13628e;
+  color: #00a9db;
   text-transform: uppercase;
 }
 
 a.button:hover{
   transition: background-color .3s ease-in-out;
-  background-color: #13628e;
-  border: 2px solid #13628e;
-  color: #FFFFFF;
+  background-color: #00a9db;
+  border: 3px solid #00a9db;
+  color: white;
 }
 
 /* ----- NAV STYLING ----- */
@@ -126,21 +139,29 @@ nav > li.active > a{
   border-bottom: solid 2px #4EBF7A;
 }
 
-li > a {
+nav li a {
 	color: #13628e;
   	padding: 15px;
   	text-decoration: none;
+	text-transform: uppercase;
 }
 
-li > a:hover {
+nav li a:hover {
 	background-color: #c4e8f5;
   	padding: 15px;
   	border-bottom: solid 2px #4EBF7A;
 }
 
 nav {
-	margin-top: 20px;
-	margin-bottom: 20px;	
+	padding: 10px;
+}
+
+.nav-logo {
+	max-height: 40px;	
+}
+
+.sign-in {
+	margin-bottom: 10px;	
 }
 
 /* ----- FORM STYLING ----- */
@@ -156,6 +177,18 @@ nav {
 /* ----- LINK STYLING ----- */
 a {
 	color: #c3e9f6;	
+}
+
+a:hover {
+	color: #009adb;	
+}
+
+.blue-background p a {
+	color: #4ebf7a;	
+}
+
+.blue-background p a:hover {
+	color: #00a9db;
 }
 
 /* ----- STYLE GUIDE ----- */
@@ -196,11 +229,41 @@ code {
 }
 
 /* ----- MOBILE STYLING ----- */
-@media (max-width: 400px) {
+@media (max-width: 992px) {
 	.text-over-image {
 		position: absolute;
 		top: 200px; 
    		left: 0; 
    		width: 100%;	
+	}
+	
+	footer {
+		text-align: center;	
+	}
+	
+	header {
+		background-color: #c4e8f5 ;
+	}
+
+	li > a {
+		color: #13628e;
+  		padding: 15px;
+  		text-decoration: none;
+	}
+
+	li > a:hover {
+		background-color: #13628e;
+		background-size: 100%;
+		color: #c4e8f5;
+  		padding: 15px;
+		border-bottom: none;
+	}
+	
+	.text-over-image {
+		position: inherit;
+	}
+	
+	.light-text {
+		color: #13628e;	
 	}
 }
