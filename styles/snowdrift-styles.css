@@ -109,13 +109,17 @@ footer::before {
 	margin-top: 30px;	
 }
 /* ----- BUTTON STYLING ----- */
-.button {
+.button,
+input.button {
 	-webkit-border-radius: 25px;
 	-moz-border-radius: 25px;
 	border-radius: 25px;
   	border: 3px solid #00a9db;
 	text-align: center;
   	padding: 10px 30px;
+	background: none;
+	text-transform: uppercase;
+	color: #00a9db;
 }
 
 a.button {
@@ -124,7 +128,8 @@ a.button {
   text-transform: uppercase;
 }
 
-a.button:hover{
+a.button:hover,
+input.button:hover {
   transition: background-color .3s ease-in-out;
   background-color: #00a9db;
   border: 3px solid #00a9db;
@@ -132,13 +137,6 @@ a.button:hover{
 }
 
 /* ----- NAV STYLING ----- */
-nav > li.active > a{
-  color: #fff;
-  background-color: #13628e;
-  padding: 15px;
-  border-bottom: solid 2px #4EBF7A;
-}
-
 nav li a {
 	color: #13628e;
   	padding: 15px;
@@ -193,7 +191,6 @@ a:hover {
 
 /* ----- STYLE GUIDE ----- */
 .guide-module,
-.guide-example,
 .class-name {
 	border: solid 1px #13628e;	
 }
@@ -230,12 +227,6 @@ code {
 
 /* ----- MOBILE STYLING ----- */
 @media (max-width: 992px) {
-	.text-over-image {
-		position: absolute;
-		top: 200px; 
-   		left: 0; 
-   		width: 100%;	
-	}
 	
 	footer {
 		text-align: center;	
@@ -244,18 +235,20 @@ code {
 	header {
 		background-color: #c4e8f5 ;
 	}
+	
+	nav li {
+		margin-top: 10px;	
+	}
 
-	li > a {
+	nav li a {
 		color: #13628e;
-  		padding: 15px;
   		text-decoration: none;
 	}
 
-	li > a:hover {
-		background-color: #13628e;
-		background-size: 100%;
-		color: #c4e8f5;
-  		padding: 15px;
+	nav li a:hover {
+		background-color: #c4e8f5;
+		padding: 0px;
+		color: #13628e;
 		border-bottom: none;
 	}
 	
